@@ -1,0 +1,36 @@
+// colours
+$reviewRed: #d00;
+.reviewStamp {
+  position: relative;
+  left: 1%;
+  top: 1%;
+  &:after {
+    width: 90px;
+    height: 30px;
+    border: solid .1em $reviewRed;
+    border-radius: .2em;
+    color: $reviewRed;
+    content: '已审核';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    opacity: 0;
+    position: absolute;
+    padding: .1em .5em;
+    margin: 30px 0 0 0px;
+    top: 1%;
+    left: 1%;
+    text-transform: uppercase;
+    //opacity: 0;
+    transform-origin: 50% 50%;
+    //transform: rotate(-2deg) scale(5);
+    //transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  }
+
+}
+
+.reviewLoaded .reviewStamp:after {
+  opacity: .75;
+  transform: rotate(-15deg) scale(1);
+  z-index: 10000;
+}

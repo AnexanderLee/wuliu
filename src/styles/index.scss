@@ -1,0 +1,331 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+.el-dialog__body {
+  padding: 20px 20px;
+  color: #606266;
+  font-size: 14px;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app{
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus{
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+.warn-content{
+  background: rgba(66,185,131,.1);
+  border-radius: 2px;
+  padding: 11px;
+  word-spacing: .05rem;
+  a{
+    color: #42b983;
+    font-weight: 400;
+  }
+}
+
+//main-container全局样式
+.app-main{
+  height: 100%;
+  min-width: 1024px;
+  // background-color: #f4f4f5;
+  overflow:auto;
+}
+
+.app-container {
+  padding: 5px 10px;
+  // 设置所有输入框的默认高度
+  .el-input__inner{
+    height: 30px !important;
+  }
+  .my-box .el-scrollbar__wrap {
+    overflow: auto;
+  }
+  input[disabled],input:disabled,input.disabled,
+  .el-textarea.is-disabled .el-textarea__inner
+  {
+    -webkit-text-fill-color: #333333;
+    -webkit-opacity:1;
+    opacity: 1;
+  }
+  .el-checkbox.is-disabled.is-checked {
+    span.el-checkbox__label {
+      color: #333 !important;
+      cursor: not-allowed;
+    }
+  }
+  .tableHeader{
+    background:#eef1f6;
+    color:#606266
+  }
+  .index_table{
+    border-radius:5px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+  }
+  .dep_data{
+    height: calc(100vh - 180px);
+    overflow: auto;
+    border-right: 1px solid #eee;
+    // border-radius: 0 0 8px 8px;
+    // box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+  }
+  .role_ma{
+    height: calc(100vh - 180px);
+    overflow: auto;
+    // border-radius: 0 0 8px 8px;
+    // box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+  }
+  .el-tabs--border-card {
+    border: none;
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04)
+  }
+  .form_main{
+    margin-top: 5px;
+    .form_area{
+      padding: 2px 5px 5px 5px;
+    }
+    .collapse_btn{
+      width: 100%;
+      margin-top: 5px;
+      background: #fff;
+      line-height: 25px;
+      text-align :center;
+      color: #d5dce5;
+      em{
+        font-style: normal;
+        font-size :14px;
+        display: none;
+        cursor: pointer;
+      }
+      &:hover {
+        color :#569df8;
+        background: #f9fafc;
+        em{
+          display: inline-block;
+        }
+      }
+    }
+
+    .wl_table{
+      // margin-top: 5px;
+      // padding: 10px 10px 0;
+      // box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+    }
+  }
+  .pageSep{
+    margin-top: 20px;
+    // position: fixed;
+    // right:0;
+    // bottom:25px
+  }
+}
+
+.head-container { //50.5
+  padding: 5px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #f4f4f5;
+  padding:5px;
+  // position: fixed;
+  // top: 84px;
+  // height: 50px;
+  margin-bottom: 5px;
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    // margin-bottom: 10px;
+  }
+  input {
+    height: 30.5px;
+    line-height: 30.5px;
+  }
+  .el-input__icon {
+    line-height: 31px;
+  }
+  // .header_left{
+  //   float: left;
+  // }
+  // .header_right{
+  //   float: right;
+  // }
+}
+.head_container{
+  padding: 5px 0;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #f4f4f5;
+  padding:5px;
+  // position: fixed;
+  // top: 84px;
+  // height: 50px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  input {
+    height: 30.5px;
+    line-height: 30.5px;
+  }
+  .el-input__icon {
+    line-height: 31px;
+  }
+}
+.el-avatar {
+  display: inline-block;
+  text-align: center;
+  background: #ccc;
+  color: #fff;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 16px;
+}
+
+.logo-con{
+  height: 60px;
+  padding: 13px 0px 0px;
+  img{
+    height: 32px;
+    width: 135px;
+    display: block;
+    //margin: 0 auto;
+  }
+}
+
+#el-login-footer {
+  height: 40px;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+#el-main-footer {
+  background: none repeat scroll 0 0 white;
+  border-top: 1px solid #e7eaec;
+  overflow: hidden;
+  padding: 10px 6px 0px 6px;
+  height: 33px;
+  font-size: 0.7rem !important;
+  color: #7a8b9a;
+  letter-spacing: 0.8px;
+  font-family: Arial, sans-serif !important;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+/**
+以下是disabled禁用样式的修改
+**/
+.el-input.is-disabled .el-input__inner{
+  background-color:#ffff !important;
+  border:none !important;
+  color:transparent !important;
+  font-size: 14px !important;
+  color: #606266 !important;
+  height:28px !important;
+  line-height:28px !important;
+  vertical-align: middle !important;
+}
+// .el-form-item__label{
+//   text-align-last: justify;
+//   text-align: justify;
+// }
+.el-input.is-disabled .el-input__icon{
+  display:none;
+}
+.el-input-number.is-disabled .el-input-number__decrease .el-icon-minus{
+  display:none;
+}
+.el-input-number.is-disabled .el-input-number__increase .el-icon-plus{
+  display:none;
+}
+
+.el-select .is-disabled .el-input__suffix{
+  color:transparent !important;
+  display:none !important;
+  font-size: 14px !important;
+  color: #606266 !important;
+  height:28px !important;
+  line-height:28px !important;
+  vertical-align: middle !important;
+}
+// .is-disabled .el-textarea__inner{
+//   background-color:#ffff !important;
+//   border:none;
+//   color:transparent;
+// }
+/*以上是禁用样式disabled的修改 */

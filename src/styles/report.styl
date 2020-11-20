@@ -1,0 +1,132 @@
+.report_filter{
+  // display flex
+  // background yellow
+  position relative
+  .filter_body{
+    display flex
+    .filterSlider{
+      // background blue
+      width 20%
+      border-right 2px solid rgba(0, 0, 0, .12)
+      .default{
+        height 50px
+        line-height 50px
+        font-size 18px
+        font-weight bold
+        border-bottom 1px solid rgba(0, 0, 0, .12)
+        cursor default
+        span{
+          display block
+          width 100%
+          text-align center
+        }
+      }
+      .use{
+        .title{
+          display block
+          margin 0
+          font-size 18px
+          font-weight bold
+          height 50px
+          line-height 50px
+          background #FFFAFA
+          cursor not-allowed
+          text-align: center
+        }
+        .useList{
+          height 320px
+          overflow auto
+          ul{
+            list-style none
+            margin 0
+            padding 0
+            li{
+              padding 0 5px
+              height 35px
+              font-size 12px
+              font-weight bold
+              line-height 35px
+              text-align center
+              width 90%
+              border 1px solid rgba(0, 0, 0, .12)
+              box-shadow 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+              border-radius 5px
+              margin-bottom 5px
+              cursor default
+              display -webkit-box   //旧版弹性盒子;
+              -webkit-box-orient vertical    //项目往下排;
+              -webkit-line-clamp 1     //超出两行文本变点状;
+              overflow hidden        //超出内容隐藏;
+            }
+            
+          }
+        }
+      }
+    }
+    .filterForm{
+      background #fefafa
+      width 80%
+      .el-menu{
+        height 30px
+        margin-bottom 20px
+        background #fefafa
+        .el-menu-item{
+          height 30px
+          line-height 20px
+          // background #fefafa
+        }
+      }
+    }
+  }
+  .drawerBody{
+    position absolute
+    top -60px
+    right -15px
+  }
+  .checked{
+    color #fff
+    box-shadow 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+    // transition .2s
+    // transform scale(.9)
+    background #409EFF
+    border-radius 5px
+  }
+}
+.deleteDialog{
+  height 100px
+  font-size 25px
+  text-align center
+  line-height: 100px
+}
+.filter_list{
+  .report_header{
+    // background red
+    height 50px
+    border-radius 8px 8px 0 0
+    padding-left 10px
+    border-bottom 1px solid #eee
+  }
+  .filter_Con{
+    height 80px
+    padding-left 10px
+    // background yellow
+    border-radius 0 0 8px 8px
+    margin-bottom 10px
+    border-bottom 1px solid #eee
+    .el-col{
+      height 40px !important
+    }
+    .filter_item{
+      display flex
+      .item_width{
+        width 40%
+        white-space:nowrap;     //超出文本不换行
+        text-overflow:ellipsis;    //超出文本变点状
+        overflow:hidden;        //超出文本内容隐藏
+      }
+      .center_width{
+        width 20%
+      }
+    }
+  }
+}

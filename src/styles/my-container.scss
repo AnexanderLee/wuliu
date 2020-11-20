@@ -1,0 +1,156 @@
+    /*设置默认的tooltip的最大宽度*/
+    .el-tooltip__popper {
+       max-width: 25%;
+    }
+    .el-textarea .el-textarea__inner {
+      resize: none;
+    }
+
+    /* 修改框架disabled默认样式*/
+    //.my-container input[disabled],input:disabled,input.disabled,
+    //.el-textarea.is-disabled .el-textarea__inner
+    //{
+    //  -webkit-text-fill-color: #333333;
+    //  -webkit-opacity:1;
+    //  opacity: 1;
+    //}
+    //.my-container .el-checkbox.is-disabled.is-checked {
+    //  span.el-checkbox__label {
+    //    color: #333 !important;
+    //    cursor: not-allowed;
+    //  }
+    //}
+    //.my-container .el-input__inner{
+    //  height: 30px !important;
+    //}
+    //
+    ///*设置container容易的内边距和外边距*/
+    //.my-container {
+    //  padding: 5px 10px;
+    //}
+
+    //.my-container .el-container {
+    //    padding: 0px;
+    //    margin: 0px;
+    //}
+    //
+    //.my-container .el-container .el-header {
+    //    padding: 0px;
+    //    margin: 0px;
+    //}
+    //
+    //.my-container .el-container .el-main {
+    //    padding: 5px 0px;
+    //  margin: 0px;
+    //  border-top: 1px dashed #EBEEF5;
+    //}
+    /*设置*/
+
+    /*设置form表单的输入框默认宽度*/
+
+    .my-form {
+      //.el-input--mini {
+      //  width: 200px;
+      //  min-width: 100px;
+      //}
+      //.el-select--mini {
+      //  width: 180px;
+      //  min-width: 100px;
+      // }
+      /*日期长度在mini样式下显示很长，会覆盖其它label，所以默认指定长度*/
+      .el-date-editor{
+        width: 180px !important;
+      }
+    }
+
+      // .el-form-item {
+      //    margin-bottom: 10px !important;
+      // }
+      /*设置form表单的输入框默认宽度*/
+      // .my-container .default-width {
+      //   //width: 200px;
+      // }
+
+      /* 设置自定义button按钮的样式*/
+      // .my-container .buttonDiv {
+      //   width: 100%;
+      //   padding: 0px;
+      // }
+
+      // .my-container .buttonDiv button {
+      //   margin: 0px 10px 5px 0px;
+      //   width: 85px;
+      // }
+
+      .my-container .buttonDiv .rightButton {
+        float: right;
+        margin: 0px 2px 0px;
+        width: 85px;
+      }
+
+
+
+      /*.my-tab .el-tabs__nav-wrap{*/
+      /*  height: 40px;*/
+      /*}
+      .my-container .my-box .el-scrollbar {
+          height: 100%;
+      }
+
+      .my-container .my-box .el-scrollbar__wrap {
+          overflow: auto;
+      }*/
+      .my-dialog .el-dialog__header {
+        border: 1px dashed #DCDCDC;
+        background: #F8F8FF;
+        height: 50px;
+        padding: 15px;
+        .el-dialog__title {
+          line-height: 20px;
+          margin: 0;
+          font-size: 16px;
+          color: #303133;
+        }
+        .el-dialog__headerbtn {
+          top: 17px;
+        }
+      }
+      .my-dialog .el-dialog__body {
+        padding: 10px 15px 10px 15px;
+        background: #FFFAFA;
+      }
+      .my-dialog .el-dialog__footer {
+        border: 1px dashed #DCDCDC;
+        background: #F8F8FF;
+        //line-height: 20px;
+        //padding: 5px 20px 0;
+        height: 60px;
+      }
+
+      /*设置tabs的滚动条*/
+      // .my-container .my-tab .el-tabs__header {
+      //   margin-bottom: 5px;
+      // }
+      /*设置tabs的滚动条*/
+      //.my-container{
+      //  .tab-div-scroll {
+      //    min-width: 1024px;
+      //    width: 100%;
+      //    // height: 120px;
+      //    overflow: auto;
+      //    padding: 0 10px 0;
+      //    //border:1px solid red;
+      //  }
+      //  .my-input-div-width {
+      //    min-width: 1024px;
+      //  }
+      //}
+
+      .table-col-red {
+        color: red;
+      }
+      .table-col-green {
+        color: green;
+      }
+
+
